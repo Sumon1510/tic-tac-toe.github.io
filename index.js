@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const won = document.querySelector('.victory');
 
   
-  let ting = new Audio("ting.mp3");
+  
   let victory = new Audio("Flawless Victory Sound Effect.mp3");
 
   let board = ["", "", "", "", "", "", "", "", ""];
@@ -96,7 +96,7 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
   const userAction = (tile, index) => {
-      ting.play();
+     
     if (isValidAction(tile) && isGameActive) {
       tile.innerText = currentPlayer;
       tile.classList.add(`player${currentPlayer}`);
